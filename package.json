@@ -2,10 +2,26 @@
   "name": "vector-math",
   "version": "0.1.0",
   "description": "https://auth0.com/blog/developing-npm-packages/",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
+    "build": "babel ./src -d ./lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbatishchev/vector-math.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dbatishchev/vector-math/issues"
+  },
+  "keywords": [
+    "javascript",
+    "math"
+  ],
+  "author": "Dmitrii Batishchev",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }
