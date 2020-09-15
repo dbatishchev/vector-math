@@ -1,1 +1,1 @@
-https://auth0.com/blog/developing-npm-packages/
+Simple math library for JavaScript and Node.js

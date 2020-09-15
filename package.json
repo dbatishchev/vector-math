@@ -1,12 +1,13 @@
 {
-  "name": "vector-math",
+  "name": "vectmath",
   "version": "0.1.0",
-  "description": "https://auth0.com/blog/developing-npm-packages/",
+  "description": "https://www.npmjs.com/package/vectmath",
   "main": "build/index.js",
   "scripts": {
     "build": "babel ./src -d ./lib",
     "lint": "eslint ./src",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,7 @@
     "math"
   ],
   "author": "Dmitrii Batishchev",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
