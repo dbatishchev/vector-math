@@ -1,7 +1,3 @@
-function sayHiTo(name) {
-  return `Hi, ${name}`;
-}
-
-const message = sayHiTo('Bruno');
-
-console.log(message);
+export {default as scale} from './scale';
+export {default as toRadians} from './toRadians';
+export {default as Vector} from './Vector';
