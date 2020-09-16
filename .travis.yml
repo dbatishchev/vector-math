@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- node
+before_deploy:
+- npm run build
+deploy:
+  provider: npm
+  email: dimitrybatishchev@gmail.com
+  api_key:
+    secure: CXSBvZyF4+BlWEAhjhJx6bJlrp/NxvsMHzcNoHCUs0+MD1D3DwijFwnoZeqVC8hp5oQUmSBVnY2RvMwUaYz8o3eNSxNoJnbD46ilUqBljdZ3GyKbKdNpdaQvVGHgfh8nzygYw4XN1T/JIZ4X8mTWHZYrs23JRvHP4sKbWc+qGNu7a98YwkZuKwJVWcmu3BL16ldzfvC6VkcHLK5k2G5BYPLTLUwoKf4FwcaKNGxALGo6iRPmSUEbxtvu6rW/KsejEpK6XitTMzOg8lr8OOMb12tKURoOJMF/77luowQPZsB/pvXZ/2yUeqxHbZSiNx9DYSyKx3X/3P0LZVumHBqyJvHx1/XkSaxpPw2Bp5ShWcDKMCp4IPu/ciNHS1uNLtjrxODCb0unvUJVWExZ6tmeHyXqBT7Ey30mqsIzRECSWn8keK/Wy8RJ5TvdiOJEUzca9U632nwutf4QPLqAeP/9MFmiEoCgFZcW93fi0Ao1S4AFoaEQFb58/XpN8KXxmk47npl9TidnOX3ijMDBY8OI7948aQGJuvGuvzYmCPumRodGk7tBGjTC3LhRbrCtOe3XbTyyQTRCUVbiuS7BQFmrPOqz7WtP7UVRKkWP39MS7PNd558gEdXu2tKF3UNA96x28GeWcTSLmyqriG6pZfU39NROBI/bt7g+GK24Y3o96C4=
+  on:
+    tags: true
+    repo: dbatishchev/vector-math
+  skip_cleanup: 'true'
