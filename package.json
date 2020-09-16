@@ -1,6 +1,6 @@
 {
   "name": "vectmath",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "https://www.npmjs.com/package/vectmath",
   "main": "build/index.js",
   "scripts": {
