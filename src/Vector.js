@@ -4,6 +4,16 @@ export default class Vector {
     this.y = y;
   }
 
+  add(v) {
+    this.x = this.x + v.x;
+    this.y = this.y + v.y;
+  }
+
+  mult(k) {
+    this.x = this.x * k;
+    this.y = this.y * k;
+  }
+
   div(k) {
     this.x = this.x / k;
     this.y = this.y / k;
@@ -15,6 +25,14 @@ export default class Vector {
 
   normalize() {
     this.div(this.mag());
+  }
+
+  limit(l) {
+    const mag = this.mag();
+    if (mag > l) {
+      this.x = this.x * l / mag;
+      this.y = this.y * l / mag;
+    }
   }
 
   static fromAngle(rad) {
