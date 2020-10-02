@@ -9,6 +9,11 @@ export default class Vector {
     this.y = this.y + v.y;
   }
 
+  subtraction(v) {
+    this.x = this.x - v.x;
+    this.y = this.y - v.y;
+  }
+
   mult(k) {
     this.x = this.x * k;
     this.y = this.y * k;
