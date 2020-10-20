@@ -1,6 +1,6 @@
 {
   "name": "vectmath",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "https://www.npmjs.com/package/vectmath",
   "main": "lib/index.js",
   "scripts": {
@@ -28,5 +28,6 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
     "jest": "^26.4.2"
-  }
+  },
+  "type": "module"
 }
